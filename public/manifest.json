@@ -1,0 +1,20 @@
+{
+  "name": "Inna Larina | Psychologist",
+  "short_name": "Inna Larina",
+  "description": "Inna Larina | Psychologist",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#7C3AED",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/psy/favicon.ico",
+      "sizes": "any",
+      "type": "image/x-icon"
+    }
+  ],
+  "categories": ["portfolio", "psychologist"],
+  "lang": "en",
+  "dir": "ltr"
+}

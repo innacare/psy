@@ -1,32 +1,34 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
-    "target": "es2022",
-    "lib": ["dom", "dom.iterable", "esnext", "es6"],
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
     "strict": true,
-    "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": true,
+    "noEmit": true,
+    "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
     "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
     "paths": {
-      "assets/*": ["./src/assets/*"],
-      "components/*": ["./src/components/*"],
-      "pages/*": ["./src/pages/*"],
-      "services/*": ["./src/services/*"],
-      "theme/*": ["./src/theme/*"],
-      "store/*": ["./src/store/*"],
-      "stories/*": ["./src/stories/*"],
-      "api/*": ["./src/api/*"],
-      "testHelpers/*": ["./src/testHelpers/*"],
+      "components/*": ["./src/app/components/*"]
     }
   },
-  "include": ["src", "custom.d.ts", "vite.config.ts", "eslint.config.js"]
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    "**/*.mts"
+  ],
+  "exclude": ["node_modules"]
 }
