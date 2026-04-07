@@ -21,7 +21,7 @@ const BackToTop = () => {
         onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}
         aria-label="Back to top"
       >
-        <img src="/images/arrow.svg" alt="back to top" />
+        <img src="/psy/images/arrow.svg" alt="back to top" />
       </button>
     )
   );
