@@ -4,7 +4,7 @@ import Scope from 'components/Scope';
 import Price from 'components/Price';
 import Faq from 'components/Faq';
 import Contacts from 'components/Contacts';
-import BackToTop from 'components/BackToTop';
+// import BackToTop from 'components/BackToTop';
 
 const Main = () => (
   <>
@@ -14,7 +14,6 @@ const Main = () => (
     <Price />
     <Faq />
     <Contacts />
-    <BackToTop />
   </>
 );
 
