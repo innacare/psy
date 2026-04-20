@@ -1,0 +1,10 @@
+:HL["/psy/_next/static/chunks/07dwaoj-c8za8.css","style"]
+:HL["/psy/_next/static/media/ce62453a442c7f35-s.p.0333ktddfbsxy.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/psy/_next/static/chunks/0r.gu_dbfrr9_.css","style"]
+:HL["/psy/images/telegram.svg","image"]
+:HL["/psy/images/gm.svg","image"]
+:HL["/psy/images/zoom.svg","image"]
+:HL["/psy/images/viber.svg","image"]
+:HL["/psy/images/about.png","image"]
+:HL["/psy/images/logo.png","image"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}},"staleTime":300,"buildId":"fkVopUUmG0uEdM_ImxVud"}
