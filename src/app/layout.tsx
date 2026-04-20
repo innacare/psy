@@ -60,8 +60,8 @@ export const metadata: Metadata = {
   },
   manifest: '/psy/manifest.json',
   icons: {
-    icon: '/psy/favicon.ico',
-    shortcut: '/psy/favicon.ico',
+    icon: '/psy/images/favicon.ico',
+    shortcut: '/psy/images/favicon.ico',
   },
 };
 

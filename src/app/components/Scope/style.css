@@ -1,8 +1,84 @@
 #scope {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 35rem;
-  padding: 1rem 3rem;
+  padding: 3rem 3rem;
   background: linear-gradient(340deg, #f2dcc5, #fff) fixed;
+
+  .scope__directions {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+  }
+
+  .scope__header {
+    font-size: 3rem;
+    margin: 0.25rem 0 1rem;
+    color: #274c76;
+    font-weight: 700;
+  }
+
+  .scope__btn {
+    background-color: #b66144;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: none;
+    height: 4rem;
+    width: 15rem;
+    font-size: 1.35rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    margin-top: 1.5rem;
+
+    &:hover {
+      box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  .scope__items {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 24%);
+    grid-column-gap: 1.25%;
+    grid-row-gap: 1.5rem;
+
+    .scope__block {
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #c8beb3;
+      border-radius: 16px;
+      background: linear-gradient(347deg, #f4d2af 15%, #f2dcc5 35%, #fff 80%);
+      box-shadow: 0 1px 2px -1px #efdcc84d;
+      padding: 0.5rem 1rem;
+
+      &:hover {
+        box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.4);
+      }
+
+      .scope__block__img {
+        width: 3rem;
+        height: 3rem;
+        margin-top: 0.75rem;
+      }
+
+      .scope__block__text {
+        text-align: center;
+        font-size: 1.35rem;
+        margin-top: 0.75rem;
+        font-weight: 600;
+        white-space: nowrap;
+      }
+
+      .scope__block__details {
+        text-align: center;
+        margin-top: 0.5rem;
+        color: #646464;
+        min-height: 2rem;
+        font-size: 0.9rem;
+      }
+    }
+  }
 }

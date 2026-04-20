@@ -1,6 +1,6 @@
 #about {
   display: flex;
-  padding: 1rem 3rem 0;
+  padding: 3rem 3rem 0;
   background: linear-gradient(340deg, #f2dcc5, #fff) fixed;
 
   @media (max-width: 376px) {
@@ -85,6 +85,10 @@
         width: 21rem;
         font-size: 1.35rem;
         border-radius: 10px;
+
+        &:hover {
+          box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.4);
+        }
 
         @media (max-width: 376px) {
           font-size: 1.25rem;

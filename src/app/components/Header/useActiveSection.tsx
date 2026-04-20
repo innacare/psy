@@ -12,12 +12,10 @@ export const useActiveSection = (ids: string[]) => {
           .filter((entry) => entry.isIntersecting)
           .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
 
-        if (visibleSections.length > 0) {
-          setActive(visibleSections[0].target.id);
-        }
+        visibleSections.length > 0 && setActive(visibleSections[0].target.id);
       },
       {
-        rootMargin: '-40% 0px -50% 0px',
+        rootMargin: '-30% 0px -30% 0px',
         threshold: [0.1, 0.3, 0.5, 0.7, 1],
       }
     );
