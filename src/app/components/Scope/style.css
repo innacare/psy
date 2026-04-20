@@ -20,9 +20,9 @@
     padding: 0.5rem 1rem;
     cursor: pointer;
     border: none;
-    height: 4rem;
-    width: 15rem;
-    font-size: 1.35rem;
+    height: 3rem;
+    width: 14rem;
+    font-size: 1.15rem;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -66,7 +66,7 @@
 
       .scope__block__text {
         text-align: center;
-        font-size: 1.35rem;
+        font-size: 1.15rem;
         margin-top: 0.75rem;
         font-weight: 600;
         white-space: nowrap;
@@ -77,7 +77,7 @@
         margin-top: 0.5rem;
         color: #646464;
         min-height: 2rem;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
       }
     }
   }
