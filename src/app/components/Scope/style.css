@@ -5,6 +5,14 @@
   .scope__directions {
     font-size: 1.15rem;
     text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    img {
+      width: 2rem;
+      height: 2rem;
+    }
   }
 
   .scope__header {
@@ -59,8 +67,8 @@
       }
 
       .scope__block__img {
-        width: 3rem;
-        height: 3rem;
+        width: 6rem;
+        height: 6rem;
         margin-top: 0.75rem;
       }
 

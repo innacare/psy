@@ -3,7 +3,18 @@ import './style.css';
 const About = () => (
   <div id="about">
     <div className="about__info">
-      <div className="about__status">Магістр клінічної психології</div>
+      <div className="about__contacts">
+        <a href="https://www.instagram.com/innacare.psy/" target="_blank" rel="noreferrer">
+          <img src="/psy/images/telegram_vector.svg" alt="telegram" />
+        </a>
+        <a href="https://t.me/larinna21" target="_blank" rel="noreferrer">
+          <img src="/psy/images/instagram_vector.svg" alt="instagram" />
+        </a>
+      </div>
+      <div className="about__status">
+        <img src="/psy/images/arrows.png" alt="arrows" />
+        Магістр клінічної психології
+      </div>
       <div className="about__header">Психологічна допомога у доказовому підході (КПТ)</div>
       <div className="about__subheader">
         Працюю з тривогою, депресивними станами та вигоранням. Допомагаю знайти внутрішній ресурс та навчитися керувати

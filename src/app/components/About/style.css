@@ -18,9 +18,27 @@
       width: 100%;
     }
 
+    .about__contacts {
+      position: absolute;
+      top: 3.5rem;
+
+      img {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+
     .about__status {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
       font-size: 1.2rem;
       font-weight: 600;
+
+      img {
+        width: 2rem;
+        height: 2rem;
+      }
 
       @media (max-width: 376px) {
         text-align: center;

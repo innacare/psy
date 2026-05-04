@@ -6,7 +6,10 @@ const Scope = () => {
 
   return (
     <div id="scope">
-      <div className="scope__directions">Моя експертність та напрямки</div>
+      <div className="scope__directions">
+        <img src="/psy/images/arrows.png" alt="arrows" />
+        Моя експертність та напрямки
+      </div>
       <div className="scope__header">З чим я допомагаю впоратися</div>
       <div className="scope__items">
         {scopeItems.map(({name, text, details, icon}) => (
