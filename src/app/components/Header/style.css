@@ -11,6 +11,7 @@
   backdrop-filter: blur(8px);
   box-shadow: 0 1px 2px -1px rgba(0, 0, 0, 0.3);
   background-color: rgba(242, 220, 197, 0.2);
+  z-index: 1;
 
   .header__logo {
     width: 2.5rem;

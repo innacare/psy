@@ -1,6 +1,11 @@
 #scope {
-  padding: 3rem;
+  padding: 2rem 3rem;
   background: linear-gradient(340deg, #f2dcc5, #fff) fixed;
+
+  @media (max-width: 376px) {
+    flex-direction: column;
+    padding: 3rem 2rem 0;
+  }
 
   .scope__directions {
     font-size: 1.15rem;
@@ -38,6 +43,13 @@
     justify-self: center;
     margin-top: 1.5rem;
 
+    @media (max-width: 376px) {
+      font-size: 1.1rem;
+      width: 100%;
+      margin-top: 1rem;
+      height: 3rem;
+    }
+
     &:hover {
       box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.4);
     }
@@ -49,6 +61,12 @@
     grid-template-columns: repeat(4, 24%);
     grid-column-gap: 1.25%;
     grid-row-gap: 1.5rem;
+
+    @media (max-width: 376px) {
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr;
+      justify-content: center;
+    }
 
     .scope__block {
       cursor: pointer;

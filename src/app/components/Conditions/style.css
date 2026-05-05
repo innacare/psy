@@ -1,0 +1,67 @@
+#conditions {
+  padding: 0 3rem 1rem;
+  background: linear-gradient(340deg, #f2dcc5, #fff) fixed;
+
+  @media (max-width: 376px) {
+    flex-direction: column;
+    padding: 3rem 2rem 0;
+  }
+
+  .conditions__directions {
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    img {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  .conditions__content {
+    display: grid;
+    grid-template-columns: 40% auto;
+    grid-column-gap: 5rem;
+
+    @media (max-width: 376px) {
+      grid-template-columns: 1fr;
+    }
+
+    .conditions__header {
+      font-size: 2.5rem;
+      margin: 0.25rem 0 1rem;
+      color: #274c76;
+      font-weight: 700;
+    }
+
+    .conditions__price {
+      .price__block {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+
+        & > div {
+          font-size: 1.35rem;
+
+          & > div {
+            font-size: 0.85rem;
+          }
+        }
+
+        & > span {
+          font-size: 1.15rem;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .conditions__certificates {
+      @media (max-width: 376px) {
+        margin-top: 1rem;
+      }
+    }
+  }
+}

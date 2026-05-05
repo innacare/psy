@@ -1,0 +1,68 @@
+.embla {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+  align-items: center;
+}
+
+.embla__slide {
+  flex: 0 0 80%;
+  padding: 0 0.75rem;
+}
+
+.parallax {
+  border-radius: 18px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  position: relative;
+}
+
+.parallax__layer {
+  will-change: transform;
+  transform: translateZ(0);
+  transition: transform 0.25s linear;
+}
+
+.parallax__layer img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.embla__dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.embla__dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 16px;
+  background: rgba(39, 76, 118, 0.25);
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.embla__dot.is-active {
+  width: 1.5rem;
+  background: #274c76;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .embla__slide {
+    flex: 0 0 90%;
+  }
+
+  .parallax {
+    border-radius: 14px;
+  }
+}
