@@ -54,6 +54,64 @@
         & > span {
           font-size: 1.15rem;
           font-weight: 600;
+          min-width: 5rem;
+        }
+      }
+
+      .price__payment {
+        margin: 2rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 4rem;
+
+        @media (max-width: 376px) {
+          flex-direction: column;
+        }
+
+        img {
+          width: 10rem;
+          height: 10rem;
+        }
+
+        a {
+          background-color: #0065b3;
+          color: #fff;
+          padding: 0.5rem 1rem;
+          cursor: pointer;
+          border: none;
+          font-size: 1.15rem;
+          border-radius: 10px;
+          text-align: center;
+
+          @media (max-width: 376px) {
+            font-size: 1.1rem;
+            width: 100%;
+            margin-top: 1.5rem;
+          }
+
+          &:hover {
+            box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.4);
+          }
+        }
+      }
+
+      .price__payment___item {
+        margin: 1rem 0;
+
+        span {
+          margin-left: 0.5rem;
+          cursor: pointer;
+          text-decoration: underline;
+        }
+
+        @media (max-width: 376px) {
+          display: flex;
+          flex-direction: column;
+
+          span {
+            margin-left: 0;
+          }
         }
       }
     }
