@@ -5,10 +5,10 @@ const About = () => (
     <div className="about__info">
       <div className="about__contacts">
         <a href="https://www.instagram.com/innacare.psy/" target="_blank" rel="noreferrer">
-          <img src="/psy/images/telegram_vector.svg" alt="telegram" />
+          <img src="/psy/images/instagram_vector.svg" alt="instagram" />
         </a>
         <a href="https://t.me/larinna21" target="_blank" rel="noreferrer">
-          <img src="/psy/images/instagram_vector.svg" alt="instagram" />
+          <img src="/psy/images/telegram_vector.svg" alt="telegram" />
         </a>
       </div>
       <div className="about__status">

@@ -1,5 +1,5 @@
 #faq {
-  padding: 1rem 3rem;
+  padding: 1rem 3rem 2rem;
   background: linear-gradient(340deg, #f2dcc5, #fff) fixed;
 }
 
@@ -10,7 +10,7 @@
   align-items: center;
   gap: 1rem;
 
-  @media (max-width: 376px) {
+  @media (max-width: 767px) {
     margin-top: 2rem;
   }
 

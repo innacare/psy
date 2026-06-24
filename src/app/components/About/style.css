@@ -3,7 +3,7 @@
   padding: 3rem 3rem 0;
   background: linear-gradient(340deg, #f2dcc5, #fff) fixed;
 
-  @media (max-width: 376px) {
+  @media (max-width: 767px) {
     flex-direction: column;
     padding: 1rem 2rem 0;
   }
@@ -14,7 +14,7 @@
     justify-content: center;
     width: 50%;
 
-    @media (max-width: 376px) {
+    @media (max-width: 767px) {
       width: 100%;
     }
 
@@ -22,7 +22,7 @@
       position: absolute;
       top: 3.5rem;
 
-      @media (max-width: 376px) {
+      @media (max-width: 767px) {
         width: calc(100% - 4rem);
         display: flex;
         justify-content: center;
@@ -47,7 +47,7 @@
         height: 2rem;
       }
 
-      @media (max-width: 376px) {
+      @media (max-width: 767px) {
         text-align: center;
       }
     }
@@ -58,7 +58,7 @@
       color: #274c76;
       font-weight: 700;
 
-      @media (max-width: 376px) {
+      @media (max-width: 767px) {
         margin: 2.5rem 0 0.5rem;
         font-size: 1.6rem;
         text-align: center;
@@ -68,7 +68,7 @@
     .about__subheader {
       font-size: 1.5rem;
 
-      @media (max-width: 376px) {
+      @media (max-width: 767px) {
         font-size: 0.85rem;
         margin-top: 21rem;
         text-align: center;
@@ -81,7 +81,7 @@
       justify-content: space-between;
       margin-top: 1rem;
 
-      @media (max-width: 376px) {
+      @media (max-width: 767px) {
         flex-direction: column;
       }
 
@@ -94,7 +94,7 @@
           display: flex;
           margin: 1rem 0;
 
-          @media (max-width: 376px) {
+          @media (max-width: 767px) {
             margin: 0 0 0.5rem;
           }
 
@@ -102,7 +102,7 @@
             width: 3rem;
             margin: 0 1rem;
 
-            @media (max-width: 376px) {
+            @media (max-width: 767px) {
               width: 2rem;
             }
           }
@@ -124,7 +124,7 @@
           box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.4);
         }
 
-        @media (max-width: 376px) {
+        @media (max-width: 767px) {
           font-size: 1.1rem;
           width: 100%;
           margin-top: 1rem;
@@ -137,7 +137,7 @@
   .about__photo {
     width: 50%;
 
-    @media (max-width: 376px) {
+    @media (max-width: 767px) {
       width: calc(100% - 4rem);
       position: absolute;
       top: 26%;

@@ -6,7 +6,7 @@
 }
 
 .accordion__item {
-  border: 1px solid #c8beb3;
+  border: none;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 1px 2px -1px #efdcc84d;
@@ -15,7 +15,7 @@
 .accordion__header {
   width: 100%;
   border: none;
-  background: #0065b3;
+  background: #2897c1;
   color: #fff;
   cursor: pointer;
   display: flex;

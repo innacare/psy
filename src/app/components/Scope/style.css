@@ -2,7 +2,7 @@
   padding: 2rem 3rem;
   background: linear-gradient(340deg, #f2dcc5, #fff) fixed;
 
-  @media (max-width: 376px) {
+  @media (max-width: 767px) {
     flex-direction: column;
     padding: 3rem 2rem 0;
   }
@@ -43,7 +43,7 @@
     justify-self: center;
     margin-top: 1.5rem;
 
-    @media (max-width: 376px) {
+    @media (max-width: 767px) {
       font-size: 1.1rem;
       width: 100%;
       margin-top: 1rem;
@@ -62,7 +62,7 @@
     grid-column-gap: 1.25%;
     grid-row-gap: 1.5rem;
 
-    @media (max-width: 376px) {
+    @media (max-width: 767px) {
       grid-template-rows: 1fr;
       grid-template-columns: 1fr;
       justify-content: center;

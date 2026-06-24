@@ -1,8 +1,14 @@
 #contacts {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 35rem;
   padding: 1rem 3rem;
-  background: linear-gradient(340deg, #f2dcc5, #fff) fixed;
+  background: #274c76;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+
+  .contacts_rights {
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
 }
