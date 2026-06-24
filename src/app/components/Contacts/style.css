@@ -6,7 +6,7 @@
   align-items: center;
   color: #fff;
 
-  .contacts_rights {
+  .contacts__rights {
     @media (max-width: 767px) {
       display: none;
     }

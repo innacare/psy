@@ -21,12 +21,14 @@
     .about__contacts {
       position: absolute;
       top: 3.5rem;
+      right: 3.5rem;
 
       @media (max-width: 767px) {
-        width: calc(100% - 4rem);
+        width: 100%;
         display: flex;
         justify-content: center;
         column-gap: 0.5rem;
+        right: 0;
       }
 
       img {
@@ -48,7 +50,7 @@
       }
 
       @media (max-width: 767px) {
-        text-align: center;
+        margin: auto;
       }
     }
 
@@ -70,7 +72,6 @@
 
       @media (max-width: 767px) {
         font-size: 0.85rem;
-        margin-top: 21rem;
         text-align: center;
       }
     }
@@ -136,11 +137,24 @@
 
   .about__photo {
     width: 50%;
+    margin: auto;
 
     @media (max-width: 767px) {
+      display: none;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .about__photo__mobile {
+    display: none;
+
+    @media (max-width: 767px) {
+      display: inherit;
+      margin: auto;
       width: calc(100% - 4rem);
-      position: absolute;
-      top: 26%;
     }
 
     img {

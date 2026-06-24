@@ -12,7 +12,7 @@ const Contacts = () => {
             <img src="/psy/images/telegram_vector_white.svg" alt="telegram" />
           </a>
         </div>
-        <div className="contacts_rights">© 2026 Inna Larina. All rights reserved</div>
+        <div className="contacts__rights">© 2026 Inna Larina. All rights reserved</div>
         <div>
           <a href="tel:+380933076226" target="_blank" rel="noreferrer">
             +380933076226

@@ -16,6 +16,9 @@ const About = () => (
         Магістр клінічної психології
       </div>
       <div className="about__header">Психологічна допомога у доказовому підході (КПТ)</div>
+      <div className="about__photo__mobile">
+        <img src="/psy/images/about.png" alt="about" />
+      </div>
       <div className="about__subheader">
         Працюю з тривогою, депресивними станами та вигоранням. Допомагаю знайти внутрішній ресурс та навчитися керувати
         своїм життям за допомогаю науково підтверджених методів.
