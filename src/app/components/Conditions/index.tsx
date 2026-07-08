@@ -7,12 +7,19 @@ import {fopItems} from './utils';
 
 // TODO add dimplomas
 const images = [
-  '/psy/images/test.png',
-  '/psy/images/test_2.png',
-  '/psy/images/test.png',
-  '/psy/images/test_2.png',
-  '/psy/images/test.png',
-  '/psy/images/test_2.png',
+  '/psy/images/certificate_0.webp',
+  '/psy/images/certificate_1.webp',
+  '/psy/images/certificate_2.webp',
+  '/psy/images/certificate_3.webp',
+  '/psy/images/certificate_4.webp',
+  '/psy/images/certificate_5.webp',
+  '/psy/images/certificate_6.webp',
+  '/psy/images/certificate_7.webp',
+  '/psy/images/certificate_8.webp',
+  '/psy/images/certificate_9.webp',
+  '/psy/images/certificate_10.webp',
+  '/psy/images/certificate_11.webp',
+  '/psy/images/certificate_12.webp',
 ];
 
 const Conditions = () => {
@@ -32,19 +39,20 @@ const Conditions = () => {
               Онлайн консультація
               <div>Тривалість 55 хв</div>
             </div>
-            <span>1600 грн</span>
+            <span>1200 грн</span>
           </div>
           <div className="price__block">
             <div>
               Офлайн консультація
-              <div>Тривалість 55 хв, м.Київ, вул. Бориса Грінченка, 4</div>
+              <div>Тривалість 55 хв, м.Київ, вул. Бориса Грінченка, 2, оф.№2</div>
             </div>
-            <span>1800 грн</span>
+            <span>1500 грн</span>
           </div>
 
           <div className="price__payment">
             <img src="/psy/images/payment.png" alt="payment" />
-            <a href="https://next.privat24.ua/payments/form/%7B%22token%22%3A%225de24512-8560-4b2c-944e-eba8a3cc9dc8%22%7D">
+            {/* TODO add token link for payment */}
+            <a href="https://next.privat24.ua/payments/dashboard">
               Сплатити онлайн
             </a>
           </div>

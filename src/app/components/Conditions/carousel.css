@@ -29,6 +29,7 @@
 .parallax__layer img {
   width: 100%;
   height: auto;
+  max-height: 32rem;
   display: block;
   object-fit: cover;
 }
