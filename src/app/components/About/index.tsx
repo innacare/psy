@@ -1,3 +1,5 @@
+'use client';
+
 import './style.css';
 
 const About = () => (
@@ -33,7 +35,9 @@ const About = () => (
           </div>
           <div>Індивідуальні сесії (50 хв)</div>
         </div>
-        <button className="about__btn">Записатися на консультацію</button>
+        <button className="about__btn" onClick={() => window.open('https://forms.gle/sBYDg12JjqXixNGU8', '_blank')}>
+          Записатися на консультацію
+        </button>
       </div>
     </div>
     <div className="about__photo">

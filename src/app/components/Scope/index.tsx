@@ -1,3 +1,5 @@
+'use client';
+
 import './style.css';
 import {scopeItems} from 'components/Scope/utils';
 
@@ -20,7 +22,9 @@ const Scope = () => {
           </div>
         ))}
       </div>
-      <button className="scope__btn">Почати Роботу</button>
+      <button className="scope__btn" onClick={() => window.open('https://forms.gle/sBYDg12JjqXixNGU8', '_blank')}>
+        Почати Роботу
+      </button>
     </div>
   );
 };

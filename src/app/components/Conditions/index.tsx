@@ -39,20 +39,13 @@ const Conditions = () => {
               Онлайн консультація
               <div>Тривалість 55 хв</div>
             </div>
-            <span>1200 грн</span>
-          </div>
-          <div className="price__block">
-            <div>
-              Офлайн консультація
-              <div>Тривалість 55 хв, м.Київ, вул. Бориса Грінченка, 2, оф.№2</div>
-            </div>
-            <span>1500 грн</span>
+            <span>1400 грн</span>
           </div>
 
           <div className="price__payment">
             <img src="/psy/images/payment.png" alt="payment" />
             {/* TODO add token link for payment */}
-            <a href="https://next.privat24.ua/payments/dashboard">
+            <a href="https://next.privat24.ua/payments/dashboard" target="_blank" rel="noreferrer">
               Сплатити онлайн
             </a>
           </div>
