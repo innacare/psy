@@ -14,8 +14,8 @@ const Contacts = () => {
         </div>
         <div className="contacts__rights">© 2026 Inna Larina. All rights reserved</div>
         <div>
-          <a href="tel:+380933076226" target="_blank" rel="noreferrer">
-            +380933076226
+          <a href="tel:+380933076225" target="_blank" rel="noreferrer">
+            +380933076225
           </a>
         </div>
       </div>
