@@ -1,6 +1,8 @@
+import {BASE_PATH} from 'config/site';
+
 const nextConfig = {
   output: 'export',
-  basePath: '/psy',
+  basePath: BASE_PATH,
   trailingSlash: true,
   images: {
     unoptimized: true,

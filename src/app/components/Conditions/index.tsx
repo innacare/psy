@@ -1,97 +1,43 @@
-'use client';
+import {LINKS, PRICE} from 'config/site';
+import Clock from './Clock';
+import Requisites from './Requisites';
+import Certificates from './Certificates';
 
-import {useParallaxEmbla} from './useParallaxEmbla';
 import './style.css';
-import './carousel.css';
-import {fopItems} from './utils';
 
-// TODO add dimplomas
-const images = [
-  '/psy/images/certificate_0.webp',
-  '/psy/images/certificate_1.webp',
-  '/psy/images/certificate_2.webp',
-  '/psy/images/certificate_3.webp',
-  '/psy/images/certificate_4.webp',
-  '/psy/images/certificate_5.webp',
-  '/psy/images/certificate_6.webp',
-  '/psy/images/certificate_7.webp',
-  '/psy/images/certificate_8.webp',
-  '/psy/images/certificate_9.webp',
-  '/psy/images/certificate_10.webp',
-  '/psy/images/certificate_11.webp',
-  '/psy/images/certificate_12.webp',
-];
-
-const Conditions = () => {
-  const {emblaRef, selectedIndex, scrollSnaps, scrollTo} = useParallaxEmbla();
-
-  return (
-    <div id="conditions">
-      <div className="conditions__directions">
-        <img src="/psy/images/arrows.png" alt="arrows" />
-        Умови та сертифікація
+const Conditions = () => (
+  <section id="conditions" aria-labelledby="conditions-title">
+    <div className="wrap">
+      <div className="center">
+        <div className="pill">Умови та сертифікація</div>
+        <h2 id="conditions-title">Вартість та освіта</h2>
       </div>
-      <div className="conditions__content">
-        <div className="conditions__price">
-          <div className="conditions__header">Вартість</div>
-          <div className="price__block">
-            <div>
-              Онлайн консультація
-              <div>Тривалість 55 хв</div>
-            </div>
-            <span>1400 грн</span>
-          </div>
-
-          <div className="price__payment">
-            <img src="/psy/images/payment.png" alt="payment" />
-            {/* TODO add token link for payment */}
-            <a href="https://next.privat24.ua/payments/dashboard" target="_blank" rel="noreferrer">
-              Сплатити онлайн
-            </a>
-          </div>
-
-          {fopItems.map(({name, text}) => (
-            <div key={name} className="price__payment___item">
-              <b>{name}:</b>
-              <span
-                onClick={() => navigator.clipboard.writeText(text)}
-                title="Натисніть, щоб скопіювати"
-              >
-                {text}
-              </span>
-            </div>
-          ))}
+      <div className="price-grid">
+        <div className="clockbox">
+          <Clock />
+          <p>одна сесія, {PRICE.minutes} хвилин тільки для вас</p>
         </div>
-        <div className="conditions__certificates">
-          <div className="conditions__header">Освіта</div>
-
-          <div className="embla" ref={emblaRef}>
-            <div className="embla__container">
-              {images.map((src, i) => (
-                <div className="embla__slide" key={i}>
-                  <div className="parallax">
-                    <div className="parallax__layer">
-                      <img src={src} alt={`slide-${i}`} />
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
+        <div className="appt">
+          <div className="l">Вартість</div>
+          <h3>Онлайн консультація</h3>
+          <div className="dur">Тривалість {PRICE.minutes} хв</div>
+          <div className="sum">
+            {PRICE.amount}
+            <span>грн</span>
           </div>
-
-          <div className="embla__dots">
-            {scrollSnaps.map((_, i) => (
-              <button
-                key={i}
-                className={`embla__dot ${i === selectedIndex ? 'is-active' : ''}`}
-                onClick={() => scrollTo(i)}
-              />
-            ))}
-          </div>
+          <a className="btn" href={LINKS.payment} target="_blank" rel="noreferrer">
+            Сплатити онлайн
+          </a>
+          <Requisites />
         </div>
+      </div>
+      <div className="wall">
+        <h3>Освіта</h3>
+        <p className="lead">Дипломи та сертифікати. Натисніть, щоб збільшити.</p>
+        <Certificates />
       </div>
     </div>
-  );
-};
+  </section>
+);
 
 export default Conditions;

@@ -1,0 +1,71 @@
+.breathe {
+  text-align: center;
+  overflow: hidden;
+}
+
+.orb-wrap {
+  margin: 42px auto 10px;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.orb-wrap::before,
+.orb-wrap::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid rgba(111, 91, 209, 0.25);
+}
+
+.orb-wrap::after {
+  inset: 30px;
+  border-color: rgba(111, 91, 209, 0.15);
+}
+
+.orb {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #fff, var(--lilac) 40%, var(--accent) 120%);
+  box-shadow: 0 0 60px rgba(111, 91, 209, 0.45);
+  transition: transform 4s ease-in-out;
+  display: grid;
+  place-items: center;
+}
+
+.orb.in {
+  transform: scale(2);
+}
+
+.orb.hold {
+  transform: scale(2);
+}
+
+.orb.out {
+  transform: scale(1);
+}
+
+.breathe__label {
+  position: absolute;
+  font-family: var(--disp);
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: var(--accent-deep);
+  z-index: 2;
+  pointer-events: none;
+}
+
+.breathe__hint {
+  color: var(--soft);
+  font-size: 0.92rem;
+  margin-top: 12px;
+  min-height: 1.6em;
+}
+
+.breathe .btn {
+  margin-top: 18px;
+}

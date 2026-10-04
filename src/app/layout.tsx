@@ -1,73 +1,65 @@
 import {ReactNode} from 'react';
-import type {Metadata} from 'next';
-import {Roboto} from 'next/font/google';
+import type {Metadata, Viewport} from 'next';
+import {Comfortaa, Nunito} from 'next/font/google';
+import JsonLd from 'components/JsonLd';
+import {PAGE_URL, PERSON_NAME, SITE_DESCRIPTION, SITE_NAME, SITE_ORIGIN, SITE_TITLE} from 'config/site';
 import './globals.css';
 
-const roboto = Roboto({subsets: ['latin'], weight: ['400', '700', '900']});
+const comfortaa = Comfortaa({subsets: ['latin', 'cyrillic'], weight: ['500', '600', '700'], variable: '--font-comfortaa'});
+const nunito = Nunito({subsets: ['latin', 'cyrillic'], weight: ['400', '500', '600', '700', '800'], variable: '--font-nunito'});
 
 export const metadata: Metadata = {
-  title: 'Ларіна Інна — психолог у Києві | Депресія, тривога, вигорання',
-  description:
-    'Ларіна Інна — практикуючий психолог у Києві. Допомога при депресії, тривожних розладах, стресі, емоційному вигоранні та прокрастинації. Онлайн та офлайн консультації.',
+  metadataBase: new URL(SITE_ORIGIN),
+  title: SITE_TITLE,
+  description: SITE_DESCRIPTION,
+  applicationName: SITE_NAME,
   keywords: [
-    'психолог Київ',
     'психолог онлайн',
-    'депресія допомога',
-    'тривога лікування',
+    'психолог КПТ',
+    'когнітивно-поведінкова терапія',
+    'психолог тривога',
+    'психолог депресія',
     'емоційне вигорання',
-    'стрес психолог',
-    'прокрастинація допомога',
-    'психотерапія Київ',
-    'консультація психолога',
-    'Ларіна Інна психолог',
+    'РДУГ',
+    'консультація психолога онлайн',
+    PERSON_NAME,
   ],
-  authors: [{name: 'Ларіна Інна'}],
-  creator: 'Ларіна Інна',
-  publisher: 'Ларіна Інна',
-  metadataBase: new URL('https://innacare.github.io/'),
-  alternates: {
-    canonical: '/psy',
-  },
+  authors: [{name: PERSON_NAME, url: PAGE_URL}],
+  creator: PERSON_NAME,
+  publisher: PERSON_NAME,
+  alternates: {canonical: PAGE_URL},
   openGraph: {
-    title: 'Ларіна Інна — психолог у Києві',
-    description:
-      'Допомога при депресії, тривозі, стресі, вигоранні та прокрастинації. Психолог у Києві. Онлайн та офлайн консультації.',
-    url: 'https://innacare.github.io/psy',
-    siteName: 'Ларіна Інна — психолог',
-    images: [
-      {
-        url: '/psy/images/profile.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Ларіна Інна психолог',
-      },
-    ],
-    locale: 'uk_UA',
     type: 'website',
+    url: PAGE_URL,
+    siteName: SITE_NAME,
+    title: SITE_TITLE,
+    description: SITE_DESCRIPTION,
+    locale: 'uk_UA',
   },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Ларіна Інна — психолог у Києві',
-    description: 'Психологічна допомога: депресія, тривога, стрес, вигорання, прокрастинація.',
-    images: ['https://innacare.github.io/psy/images/profile.jpg'],
-  },
+  twitter: {card: 'summary_large_image', title: SITE_TITLE, description: SITE_DESCRIPTION},
   robots: {
     index: true,
     follow: true,
+    googleBot: {index: true, follow: true, 'max-image-preview': 'large', 'max-snippet': -1, 'max-video-preview': -1},
   },
-  verification: {
-    google: 'your-google-site-verification-code',
-  },
-  manifest: '/psy/manifest.json',
-  icons: {
-    icon: '/psy/images/favicon.ico',
-    shortcut: '/psy/images/favicon.ico',
-  },
+  formatDetection: {telephone: false},
+  verification: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION
+    ? {google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION}
+    : undefined,
+};
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#fdf4ee',
 };
 
 const RootLayout = ({children}: Readonly<{children: ReactNode}>) => (
-  <html lang="uk">
-    <body className={roboto.className}>{children}</body>
+  <html lang="uk" className={`${comfortaa.variable} ${nunito.variable}`}>
+    <body>
+      {children}
+      <JsonLd />
+    </body>
   </html>
 );
 
